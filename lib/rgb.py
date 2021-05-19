@@ -1,7 +1,7 @@
 def to_hex(r, g, b):
-    return (
-        "#"
-        + format(r, "x").rjust(2, "0")
-        + format(g, "x").rjust(2, "0")
-        + format(b, "x").rjust(2, "0")
-    )
+    hex = "#"
+
+    for x in [r, g, b]:
+        hex += format(x, "x").rjust(2, "0")
+
+    return hex
