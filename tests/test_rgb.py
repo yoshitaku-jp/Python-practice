@@ -1,6 +1,6 @@
 import unittest
 
-from lib.rgb import to_hex, to_ints
+from package.rgb import to_hex, to_ints
 
 
 class TestRgb(unittest.TestCase):
