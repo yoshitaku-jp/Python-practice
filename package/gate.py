@@ -3,7 +3,7 @@ class Gate:
         self.name = name
 
     def enter(self, ticket):
-        pass
+        ticket.stamp(self.name)
 
     def exit(self, ticket):
         return True
